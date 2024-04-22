@@ -16,6 +16,8 @@ argparse
 
 ### Running the experiments
 
+(Added functionality to divide data into shards, use `sharded_run.py` and `sharded_compute_kl_distance.py` instead)
+
 ## Synthetic Moon Classification Dataset
 
 1. To run the training with VI on full data, retraining with VI on remaining data, and unlearning using EUBO, rKL
