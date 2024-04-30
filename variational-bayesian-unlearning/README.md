@@ -16,7 +16,24 @@ argparse
 
 ### Running the experiments
 
-(Added functionality to divide data into shards, use `sharded_run.py` and `sharded_compute_kl_distance.py` instead)
+(Added functionality to divide data into shards, use `sharded_run.py`, `sharded_compute_kl_distance.py` and `sharded_plot_moon_gauss.py` instead)
+
+1.
+```
+python sharded_run.py --exper moon --appr gauss_fullcov --nsample 100 --ntrain 3000 --shards 3 --folder result
+```
+2.
+```
+python3 sharded_compute_kl_distance.py --folder result --outfolder result/plot_data --exper moon --appr gauss_fullcov --shards 3
+```
+3.
+```
+python3 plot_kl_distance_mean_std.py --folder result/plot_data --exper moon --appr gauss_fullcov
+```
+4.
+```
+python3 sharded_plot_moon_gauss.py --exper moon --shards 3
+```
 
 ## Synthetic Moon Classification Dataset
 
