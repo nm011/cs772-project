@@ -1,5 +1,7 @@
 
-# Variational Bayesian Unlearning
+# Variational Bayesian Unlearning through Shards
+
+Modified from https://github.com/qphong/variational-bayesian-unlearning
 
 ### Prerequisites
 
